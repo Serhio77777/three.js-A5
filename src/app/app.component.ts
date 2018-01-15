@@ -31,7 +31,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
     this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 10000);
     this.camera.position.z = 1000;
     this.scene.add( new THREE.AmbientLight( 0x222222 ) );
-		var light = new THREE.PointLight( 0xffffff );
+		const light = new THREE.PointLight( 0xffffff );
 		light.position.copy( this.camera.position );
 		this.scene.add( light );
     // this.addFigure();
@@ -54,77 +54,77 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
     this.mesh.rotation.y += 0.02;
     this.meshPicture.rotation.y += 0.01;
     this.meshPictureSecond.rotation.y += 0.01;
-    // switch (Math.floor(Math.random() * (10 - 0)) + 0) {
-    //   case 4:
-    //     this.cameraParam = this.cameraParam + 1
-    //     this.camera.position.z = this.cameraParam;
-    //     this.cameraParam = this.cameraParam + 1
-    //     this.camera.position.z = this.cameraParam;
-    //     this.cameraParam = this.cameraParam + 1
-    //     this.camera.position.z = this.cameraParam;
-    //     this.cameraParam = this.cameraParam + 1
-    //     this.camera.position.z = this.cameraParam;
-    //     this.cameraParam = this.cameraParam + 1
-    //     this.camera.position.z = this.cameraParam;
-    //     this.cameraParam = this.cameraParam + 1
-    //     this.camera.position.z = this.cameraParam;
-    //     this.cameraParam = this.cameraParam + 1
-    //     this.camera.position.z = this.cameraParam;
-    //     this.cameraParam = this.cameraParam + 1
-    //     this.camera.position.z = this.cameraParam;
-    //     this.cameraParam = this.cameraParam + 1
-    //     this.camera.position.z = this.cameraParam;
-    //     this.cameraParam = this.cameraParam + 1
-    //     this.camera.position.z = this.cameraParam;
-    //     this.cameraParam = this.cameraParam + 1
-    //     this.camera.position.z = this.cameraParam;
-    //     this.cameraParam = this.cameraParam + 1
-    //     this.camera.position.z = this.cameraParam;
-    //     this.cameraParam = this.cameraParam + 1
-    //     this.camera.position.z = this.cameraParam;
-    //     this.cameraParam = this.cameraParam + 1
-    //     this.camera.position.z = this.cameraParam;
-    //     this.cameraParam = this.cameraParam + 1
-    //     this.camera.position.z = this.cameraParam;
-    //   break;
-    //   case 7:
-    //     this.cameraParam = this.cameraParam - 1
-    //     this.camera.position.z = this.cameraParam;
-    //     this.cameraParam = this.cameraParam - 1
-    //     this.camera.position.z = this.cameraParam;
-    //     this.cameraParam = this.cameraParam - 1
-    //     this.camera.position.z = this.cameraParam;
-    //     this.cameraParam = this.cameraParam - 1
-    //     this.camera.position.z = this.cameraParam;
-    //     this.cameraParam = this.cameraParam - 1
-    //     this.camera.position.z = this.cameraParam;
-    //     this.cameraParam = this.cameraParam - 1
-    //     this.camera.position.z = this.cameraParam;
-    //     this.cameraParam = this.cameraParam - 1
-    //     this.camera.position.z = this.cameraParam;
-    //     this.cameraParam = this.cameraParam - 1
-    //     this.camera.position.z = this.cameraParam;
-    //     this.cameraParam = this.cameraParam - 1
-    //     this.camera.position.z = this.cameraParam;
-    //     this.cameraParam = this.cameraParam - 1
-    //     this.camera.position.z = this.cameraParam;
-    //     this.cameraParam = this.cameraParam - 1
-    //     this.camera.position.z = this.cameraParam;
-    //     this.cameraParam = this.cameraParam - 1
-    //     this.camera.position.z = this.cameraParam;
-    //     this.cameraParam = this.cameraParam - 1
-    //     this.camera.position.z = this.cameraParam;
-    //     this.cameraParam = this.cameraParam - 1
-    //     this.camera.position.z = this.cameraParam;
-    //     this.cameraParam = this.cameraParam - 1
-    //     this.camera.position.z = this.cameraParam;
-    //   break;
-    //   default:;
-    // }
-    // if (this.cameraParam < 50) {
-    //   this.cameraParam = 100
-    //   this.camera.position.z = this.cameraParam;
-    // }
+    switch (Math.floor(Math.random() * (10 - 0)) + 0) {
+      case 4:
+        this.cameraParam = this.cameraParam + 1
+        this.camera.position.z = this.cameraParam;
+        this.cameraParam = this.cameraParam + 1
+        this.camera.position.z = this.cameraParam;
+        this.cameraParam = this.cameraParam + 1
+        this.camera.position.z = this.cameraParam;
+        this.cameraParam = this.cameraParam + 1
+        this.camera.position.z = this.cameraParam;
+        this.cameraParam = this.cameraParam + 1
+        this.camera.position.z = this.cameraParam;
+        this.cameraParam = this.cameraParam + 1
+        this.camera.position.z = this.cameraParam;
+        this.cameraParam = this.cameraParam + 1
+        this.camera.position.z = this.cameraParam;
+        this.cameraParam = this.cameraParam + 1
+        this.camera.position.z = this.cameraParam;
+        this.cameraParam = this.cameraParam + 1
+        this.camera.position.z = this.cameraParam;
+        this.cameraParam = this.cameraParam + 1
+        this.camera.position.z = this.cameraParam;
+        this.cameraParam = this.cameraParam + 1
+        this.camera.position.z = this.cameraParam;
+        this.cameraParam = this.cameraParam + 1
+        this.camera.position.z = this.cameraParam;
+        this.cameraParam = this.cameraParam + 1
+        this.camera.position.z = this.cameraParam;
+        this.cameraParam = this.cameraParam + 1
+        this.camera.position.z = this.cameraParam;
+        this.cameraParam = this.cameraParam + 1
+        this.camera.position.z = this.cameraParam;
+      break;
+      case 7:
+        this.cameraParam = this.cameraParam - 1
+        this.camera.position.z = this.cameraParam;
+        this.cameraParam = this.cameraParam - 1
+        this.camera.position.z = this.cameraParam;
+        this.cameraParam = this.cameraParam - 1
+        this.camera.position.z = this.cameraParam;
+        this.cameraParam = this.cameraParam - 1
+        this.camera.position.z = this.cameraParam;
+        this.cameraParam = this.cameraParam - 1
+        this.camera.position.z = this.cameraParam;
+        this.cameraParam = this.cameraParam - 1
+        this.camera.position.z = this.cameraParam;
+        this.cameraParam = this.cameraParam - 1
+        this.camera.position.z = this.cameraParam;
+        this.cameraParam = this.cameraParam - 1
+        this.camera.position.z = this.cameraParam;
+        this.cameraParam = this.cameraParam - 1
+        this.camera.position.z = this.cameraParam;
+        this.cameraParam = this.cameraParam - 1
+        this.camera.position.z = this.cameraParam;
+        this.cameraParam = this.cameraParam - 1
+        this.camera.position.z = this.cameraParam;
+        this.cameraParam = this.cameraParam - 1
+        this.camera.position.z = this.cameraParam;
+        this.cameraParam = this.cameraParam - 1
+        this.camera.position.z = this.cameraParam;
+        this.cameraParam = this.cameraParam - 1
+        this.camera.position.z = this.cameraParam;
+        this.cameraParam = this.cameraParam - 1
+        this.camera.position.z = this.cameraParam;
+      break;
+      default:;
+    }
+    if (this.cameraParam < 50) {
+      this.cameraParam = 100
+      this.camera.position.z = this.cameraParam;
+    }
     this.renderer.render(this.scene, this.camera);
   }
 
@@ -157,13 +157,13 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       new THREE.Vector3(-50, 0, -60),
       new THREE.Vector3(-70, -25, -60),
       new THREE.Vector3(-85, -50, -60),
-      new THREE.Vector3(-75, -75, -60),
-			new THREE.Vector3(-65, -100, -60),
-      new THREE.Vector3(-55, -125, -60),
-      new THREE.Vector3(-35, -150, -60),
-      new THREE.Vector3(-30, -160, -60),
-      new THREE.Vector3(-25, -170, -60),
-      new THREE.Vector3(-20, -180, -60),
+      new THREE.Vector3(-80, -75, -60),
+			new THREE.Vector3(-75, -100, -60),
+      new THREE.Vector3(-70, -125, -60),
+      new THREE.Vector3(-65, -150, -60),
+      new THREE.Vector3(-50, -160, -60),
+      new THREE.Vector3(-45, -170, -60),
+      new THREE.Vector3(-30, -180, -60),
 			new THREE.Vector3(0, -200, -60),
 			new THREE.Vector3(20, -150, -60),
 			new THREE.Vector3(30, -125, -60),
@@ -180,16 +180,16 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
 		};
 
     const pts = []
-    const count = 8; // к-во граней
+    const count = 100; // к-во граней
 		for ( let i = 0; i < count; i ++ ) {
 			let l = 30; // толщина линии
 			let a = 2 * i / count * Math.PI;
 			pts.push( new THREE.Vector2 ( Math.cos( a ) * l, Math.sin( a ) * l ) );
 		}
 
-    var shape = new THREE.Shape( pts );
-		var geometry = new THREE.ExtrudeGeometry( shape, extrudeSettings );
-		var material = new THREE.MeshLambertMaterial( { color: 0xb00000, wireframe: false } );
+    const shape = new THREE.Shape( pts );
+		const geometry = new THREE.ExtrudeGeometry( shape, extrudeSettings );
+		const material = new THREE.MeshLambertMaterial( { color: 0x00600f, wireframe: false } );
     this.meshPictureSecond = new THREE.Mesh(geometry, material)
     this.scene.add(this.meshPictureSecond);
     this.renderer.setSize(window.innerWidth, window.innerHeight);
@@ -200,7 +200,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
     this.camera.lookAt(new THREE.Vector3(0, 0, 0));
 
     const closedSpline: any = new THREE.CatmullRomCurve3( [
-      new THREE.Vector3(100, 150, 60), // z = 60
+      new THREE.Vector3(100, 150, 60),
       new THREE.Vector3(80, 175, 60),
       new THREE.Vector3(65, 200, 60),
       new THREE.Vector3(30, 175, 60),
@@ -212,13 +212,13 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       new THREE.Vector3(50, 0, 60),
       new THREE.Vector3(70, -25, 60),
       new THREE.Vector3(85, -50, 60),
-      new THREE.Vector3(75, -75, 60),
-			new THREE.Vector3(65, -100, 60),
-      new THREE.Vector3(55, -125, 60),
-      new THREE.Vector3(35, -150, 60),
-      new THREE.Vector3(30, -160, 60),
-      new THREE.Vector3(25, -170, 60),
-      new THREE.Vector3(20, -180, 60),
+      new THREE.Vector3(80, -75, 60),
+			new THREE.Vector3(75, -100, 60),
+      new THREE.Vector3(70, -125, 60),
+      new THREE.Vector3(65, -150, 60),
+      new THREE.Vector3(50, -160, 60),
+      new THREE.Vector3(45, -170, 60),
+      new THREE.Vector3(30, -180, 60),
 			new THREE.Vector3(0, -200, 60),
 			new THREE.Vector3(-20, -150, 60),
 			new THREE.Vector3(-30, -125, 60),
@@ -242,9 +242,9 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
 			pts.push( new THREE.Vector2 ( Math.cos( a ) * l, Math.sin( a ) * l ) );
 		}
 
-    var shape = new THREE.Shape( pts );
-		var geometry = new THREE.ExtrudeGeometry( shape, extrudeSettings );
-		var material = new THREE.MeshLambertMaterial( { color: 0xb00000, wireframe: false } );
+    const shape = new THREE.Shape( pts );
+		const geometry = new THREE.ExtrudeGeometry( shape, extrudeSettings );
+		const material = new THREE.MeshLambertMaterial( { color: 0xb00000, wireframe: false } );
     this.meshPicture = new THREE.Mesh(geometry, material)
     this.scene.add(this.meshPicture);
     this.renderer.setSize(window.innerWidth, window.innerHeight);
